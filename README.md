@@ -4,7 +4,7 @@
 git clone https://github.com/mauricio1499/superset-vmt.git
 
 
-cd superst-vmt
+cd superset-vmt
 
 
 docker-compose up -d
