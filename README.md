@@ -28,4 +28,4 @@ superset fab create-admin
 ~~~
 
 
->> Ver màs en: https://superset.apache.org/docs/installation/installing-superset-from-scratch
+>> Ver más en: https://superset.apache.org/docs/installation/installing-superset-from-scratch
