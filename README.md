@@ -1,7 +1,8 @@
 # superset-vmt
 
-
+~~~
 git clone https://github.com/mauricio1499/superset-vmt.git
+~~~
 
 ~~~
 cd superset-vmt
@@ -16,7 +17,7 @@ docker-compose up -d
 
 
 
-# Crear un usuario admin
+## Crear un usuario admin
 ~~~
 docker-compose exec app_superset bash
 ~~~
