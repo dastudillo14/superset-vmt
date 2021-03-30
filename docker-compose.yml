@@ -1,10 +1,10 @@
 version: "3"
 
 services:
-  app_superset:        
+  app_ss:        
     restart: on-failure:5
     build: .
-    container_name: app_superset
+    container_name: app_ss_7
     ports:
       - "8089:8089"
     command:        

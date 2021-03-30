@@ -1,15 +1,10 @@
-FROM python:3.7
+FROM python:3.6
 
-# INSTALAR ULTIMA VERSION DE PIP Y HERRAMIENTAS PIP
-RUN pip install --upgrade setuptools pip
-RUN pip install virtualenv
-# CREAR ENTORNO VIRUTAL Y ACTIVARLO
-RUN python3 -m venv venv
-RUN . venv/bin/activate
-# INSTALAR SUPERSET
-RUN pip install apache-superset
-RUN pip install pyhive 
-RUN pip install dataclasses
+# INSTALAR HERRAMIENTAS PIP
+RUN apt-get update && apt-get install build-essential libssl-dev libffi-dev libsasl2-modules libsasl2-dev libldap2-dev -y
+
+COPY /requirements.txt /requirements.txt
+RUN pip install -r requirements.txt
 # INICIO DE SUPERSET, LEVANTA BD SQLITE PARA MANEJAR SESIONES
 RUN superset db upgrade
 RUN superset init
