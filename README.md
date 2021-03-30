@@ -19,7 +19,7 @@ docker-compose up -d
 
 ## Crear un usuario admin
 ~~~
-docker-compose exec app_superset bash
+docker-compose exec app_ss bash
 ~~~
 
 

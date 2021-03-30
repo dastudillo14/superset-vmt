@@ -4,7 +4,7 @@ services:
   app_ss:        
     restart: on-failure:5
     build: .
-    container_name: app_ss_7
+    container_name: app_ss
     ports:
       - "8089:8089"
     command:        
